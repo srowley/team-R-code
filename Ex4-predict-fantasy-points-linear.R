@@ -27,14 +27,14 @@ getwd()
 # upload to Github. We can put it back together using rbind. rbind will just
 # combine tables so that their rows are stacked on top of each other.
 
-playTbl <- rbind(read.csv("~/data/PLAY_1.csv",stringsAsFactors = F),
-                 read.csv("~/data/PLAY_2.csv",stringsAsFactors = F),
-                 read.csv("~/data/PLAY_3.csv",stringsAsFactors = F))
+playTbl <- rbind(read.csv("data/PLAY_1.csv",stringsAsFactors = F),
+                 read.csv("data/PLAY_2.csv",stringsAsFactors = F),
+                 read.csv("data/PLAY_3.csv",stringsAsFactors = F))
                  
-plyrTbl <- read.csv("~/data/PLAYER.csv",stringsAsFactors = F)
-passTbl <- read.csv("~/data/PASS.csv",stringsAsFactors = F)
-rushTbl <- read.csv("~/data/RUSH.csv",stringsAsFactors = F)
-gameTbl <- read.csv("~/data/GAME.csv",stringsAsFactors = F)
+plyrTbl <- read.csv("data/PLAYER.csv",stringsAsFactors = F)
+passTbl <- read.csv("data/PASS.csv",stringsAsFactors = F)
+rushTbl <- read.csv("data/RUSH.csv",stringsAsFactors = F)
+gameTbl <- read.csv("data/GAME.csv",stringsAsFactors = F)
 
 # We're going to merge both the rush table and pass table with the play table so
 # we need to make sure there are no duplicate field names. these two lines of
