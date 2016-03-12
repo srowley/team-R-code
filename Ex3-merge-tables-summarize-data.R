@@ -25,13 +25,13 @@ getwd()
 # upload to Github. We can put it back together using rbind. rbind will just
 # combine tables so that their rows are stacked on top of each other.
 
-playTbl <- rbind(read.csv("~/data/PLAY_1.csv",stringsAsFactors = F),
-                 read.csv("~/data/PLAY_2.csv",stringsAsFactors = F),
-                 read.csv("~/data/PLAY_3.csv",stringsAsFactors = F))
+playTbl <- rbind(read.csv("data/PLAY_1.csv",stringsAsFactors = F),
+                 read.csv("data/PLAY_2.csv",stringsAsFactors = F),
+                 read.csv("data/PLAY_3.csv",stringsAsFactors = F))
                  
-plyrTbl <- read.csv("~/data/PLAYER.csv",stringsAsFactors = F)
-passTbl <- read.csv("~/data/PASS.csv",stringsAsFactors = F)
-gameTbl <- read.csv("~/data/GAME.csv",stringsAsFactors = F)
+plyrTbl <- read.csv("data/PLAYER.csv",stringsAsFactors = F)
+passTbl <- read.csv("data/PASS.csv",stringsAsFactors = F)
+gameTbl <- read.csv("data/GAME.csv",stringsAsFactors = F)
 
 # The play table contains information available for individual plays including
 # time left on the clock, how many points the offense has, the down, the
